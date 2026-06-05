@@ -9,21 +9,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-brand">Sagar Dey</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
     <div class="container">
-        <header class="header">
-            <div class="profile-area">
+        <header class="header" id="about">
+            <div class="profile-area fade-in">
                 <img class="profileIMG" src="./assets/profile-img.png" alt="Sagar Dey Portrait">
                 <div class="introbox">
                     <h1>Sagar Dey</h1>
                     <p class="subtitle">Full Stack Web Developer</p>
-                    <p>Hi! I'm a full-stack web developer with a good understanding of both front-end and back-end development. I'm looking for an entry-level job. I want to help a lively team by making scalable, user-friendly web apps and sharing my technical knowledge.</p>
+                    <p>Hi! I’m a Full-Stack MERN Developer with hands-on experience building modern web applications using MongoDB, Express.js, React, and Node.js. I enjoy transforming complex ideas into smooth, reliable, and user-friendly products. I’m looking to contribute to a collaborative development team where I can build scalable solutions and keep growing as a software engineer. </p>
                 </div>
             </div>
         </header>
 
         <main class="main">
             
-            <section class="skills section-block" id="skills">
+            <section class="skills section-block fade-in-section" id="skills">
                 <h2>Skills</h2>
                 <p>I am a dedicated and motivated individual with a strong passion for learning and personal growth. My experiences have helped me develop both technical and interpersonal skills that I apply to every project.</p>
                 <div class="skillset">
@@ -47,10 +74,26 @@
                         <i class="fa-brands fa-node-js"></i>
                         <span>Node.js</span>
                     </div>
+                    <div class="skillcard">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MongoDB</span>
                     </div>
+                    <div class="skillcard">
+                        <i class="fa-solid fa-database"></i>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="skillcard">
+                        <i class="fa-solid fa-server"></i>
+                        <span>Express</span>
+                    </div>
+                    <div class="skillcard">
+                        <i class="fa-solid fa-bolt"></i>
+                        <span>Next.js</span>
+                    </div>
+                </div>
             </section>
 
-            <section class="education section-block" id="education">
+            <section class="education section-block fade-in-section" id="education">
                 <h2>Education</h2>
                 <div class="grid-container">
                     <div class="educationcard">
@@ -69,109 +112,399 @@
                         <h3>Bachelor of Technology (Computer Science)</h3>
                         <p>Marks(In CGPA): 8.4</p>
                     </div>
-                    </div>
+                </div>
             </section>
 
-            <section class="projects section-block" id="projects">
+            <section class="certifications section-block fade-in-section" id="certifications">
+                <h2>Certifications & Internships</h2>
+                
+                <div class="cert-subsection">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-briefcase"></i> Internship
+                    </h3>
+                    <div class="cert-grid">
+                        <div class="certcard">
+                            <div class="cert-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Data Analytics Internship</h4>
+                            <p class="cert-org">Webel Fujisoft Vara</p>
+                            <p class="cert-year">2024</p>
+                            <p class="cert-desc">Completed professional internship with certification in Data Analytics</p>
+                            <a href="INSERT_YOUR_WEBEL_CERTIFICATE_LINK_HERE_2024" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-subsection">
+                    <h3 class="subsection-title">
+                        <i class="fas fa-certificate"></i> Certifications
+                    </h3>
+                    <div class="cert-grid">
+                        <div class="certcard">
+                            <div class="cert-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>Full Stack Development with AI</h4>
+                            <p class="cert-org">PW Skills</p>
+                            <p class="cert-year">2026</p>
+                            <p class="cert-desc">Comprehensive course covering full-stack web development and AI integration</p>
+                            <a href="https://cdn.pwskills.com/learn/certificates/8f859e6c-4400-410c-9408-0a81a2b03827.pdf" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+
+                        <div class="certcard">
+                            <div class="cert-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <h4>Japanese Vocabulary N5</h4>
+                            <p class="cert-org">NihonGoal Course - Cursa</p>
+                            <p class="cert-year">2025</p>
+                            <p class="cert-desc">Japanese Language Proficiency Test N5 level vocabulary certification</p>
+                            <a href="https://drive.google.com/file/d/1vvIBe1B0croFGxW7tCNIUsxaQC1hIiiJ/view?pli=1" class="cert-link" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Certificate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section-block fade-in-section" id="projects">
                 <h2>Projects</h2>
-                <div class="grid-container projects-grid">
-                    <div class="projectcard">
-                        <a href="https://www.pillp.in/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project1.png" alt="Leave Management System">
-                            </div>
-                            <h3>1. Leave Management System</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-tetris.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project2.png" alt="Neon Tetris Pro">
-                            </div>
-                            <h3>2. Neon Tetris Pro</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-battle-city.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project3.png" alt="Battle City">
-                            </div>
-                            <h3>3. Battle City</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-tower-of-hanoi.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project4.png" alt="Tower Of Hanoi">
-                            </div>
-                            <h3>4. Tower Of Hanoi</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-open-numerology-app.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project5.png" alt="Open Numerology App">
-                            </div>
-                            <h3>5. Open Numerology App</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sdword.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project6.png" alt="Rich Text Editor">
-                            </div>
-                            <h3>6. Rich Text Editor</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-draw.onrender.com/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project7.png" alt="SD-Draw">
-                            </div>
-                            <h3>7. SD-Draw</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://akashvani-gfqd.onrender.com/login" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project8.png" alt="Akashvani">
-                            </div>
-                            <h3>8. Akashvani</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-chess.netlify.app/" target="_blank">
-                            <div class="img-wrapper">
-                                <img src="/assets/project9.jpg" alt="Neon Chess">
-                            </div>
-                            <h3>9. Neon Chess</h3>
-                        </a>
-                    </div>
-                    <div class="projectcard">
-                        <a href="https://sd-adda.onrender.com/login" target="_blank">
+                <!-- 
+                    FOR DETAILED PROJECT TEMPLATES AND INSTRUCTIONS:
+                    See PROJECT_TEMPLATE.html file
+                    
+                    Quick Guide:
+                    - TOP 4 projects (always visible): Best/recent MERN projects, contractual work
+                    - HIDDEN projects (behind Load More): Older projects, simple games/tools
+                    - Use data-priority="top" for featured, "low" for hidden
+                    - Add class="hidden-project" for projects behind Load More button
+                -->
+                <div class="grid-container projects-grid" id="projectsGrid">
+                    <!-- Top 4 Featured Projects -->
+                    <div class="projectcard" data-priority="top">
+                        <a href="https://sd-adda.onrender.com/login" target="_blank" class="project-link">
                             <div class="img-wrapper">
                                 <img src="/assets/project10.png" alt="SD-Adda">
+                                <div class="project-overlay">
+                                    <h3>SD-Adda</h3>
+                                    <p class="project-desc">Discord-like platform with real-time collaboration, media sharing via Cloudinary, and Zegocloud API for voice/video calls. Full-featured MERN social hub.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-mongo">MongoDB</span>
+                                        <span class="badge badge-express">Express</span>
+                                        <span class="badge badge-react">React</span>
+                                        <span class="badge badge-node">Node.js</span>
+                                        <span class="badge badge-cloudinary">Cloudinary</span>
+                                        <span class="badge badge-zego">Zegocloud</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
                             </div>
-                            <h3>10. SD-Adda</h3>
+                            <div class="project-info-mobile">
+                                <h3>SD-Adda</h3>
+                                <p class="project-desc-mobile">Discord-like platform with real-time collaboration and voice/video calls.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">M</span>
+                                    <span class="badge-mobile">E</span>
+                                    <span class="badge-mobile">R</span>
+                                    <span class="badge-mobile">N</span>
+                                </div>
+                            </div>
                         </a>
                     </div>
+
+                    <div class="projectcard" data-priority="top">
+                        <a href="https://akashvani-gfqd.onrender.com/login" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project8.png" alt="Akashvani">
+                                <div class="project-overlay">
+                                    <h3>Akashvani</h3>
+                                    <p class="project-desc">WhatsApp-inspired messaging app with real-time chat, voice messages, and media sharing powered by Cloudinary and MERN stack.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-mongo">MongoDB</span>
+                                        <span class="badge badge-express">Express</span>
+                                        <span class="badge badge-react">React</span>
+                                        <span class="badge badge-node">Node.js</span>
+                                        <span class="badge badge-cloudinary">Cloudinary</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Akashvani</h3>
+                                <p class="project-desc-mobile">WhatsApp-inspired messaging app with real-time chat and voice messages.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">M</span>
+                                    <span class="badge-mobile">E</span>
+                                    <span class="badge-mobile">R</span>
+                                    <span class="badge-mobile">N</span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+
+                    <div class="projectcard" data-priority="top">
+                        <a href="https://sd-draw.onrender.com/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project7.png" alt="SD-Draw">
+                                <div class="project-overlay">
+                                    <h3>SD-Draw</h3>
+                                    <p class="project-desc">Miro-like infinite canvas for real-time collaborative drawing using PeerJS. Built with MERN for seamless multi-user creativity.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-mongo">MongoDB</span>
+                                        <span class="badge badge-express">Express</span>
+                                        <span class="badge badge-react">React</span>
+                                        <span class="badge badge-node">Node.js</span>
+                                        <span class="badge badge-peer">PeerJS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>SD-Draw</h3>
+                                <p class="project-desc-mobile">Miro-like infinite canvas for real-time collaborative drawing.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">M</span>
+                                    <span class="badge-mobile">E</span>
+                                    <span class="badge-mobile">R</span>
+                                    <span class="badge-mobile">N</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard" data-priority="top">
+                        <a href="https://www.pillp.in/" target="_blank" class="project-link">
+                            <div class="contractual-badge">
+                                <i class="fas fa-briefcase"></i> Contractual
+                            </div>
+                            <div class="img-wrapper">
+                                <img src="/assets/project1.png" alt="Leave Management System">
+                                <div class="project-overlay">
+                                    <h3>Leave Management System</h3>
+                                    <p class="project-desc">Enterprise leave management with WhatsApp API integration for real-time notifications to owners, managers, HR, and employees. MERN stack.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-mongo">MongoDB</span>
+                                        <span class="badge badge-express">Express</span>
+                                        <span class="badge badge-react">React</span>
+                                        <span class="badge badge-node">Node.js</span>
+                                        <span class="badge badge-whatsapp">WhatsApp API</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Leave Management System</h3>
+                                <p class="project-desc-mobile">Enterprise leave management with WhatsApp API integration.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">M</span>
+                                    <span class="badge-mobile">E</span>
+                                    <span class="badge-mobile">R</span>
+                                    <span class="badge-mobile">N</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Remaining 6 Projects (Hidden Initially) -->
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sd-tetris.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project2.png" alt="Neon Tetris Pro">
+                                <div class="project-overlay">
+                                    <h3>Neon Tetris Pro</h3>
+                                    <p class="project-desc">Classic Tetris with neon aesthetics. Pure vanilla JavaScript, HTML, and CSS.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Neon Tetris Pro</h3>
+                                <p class="project-desc-mobile">Classic Tetris with neon aesthetics.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sd-battle-city.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project3.png" alt="Battle City">
+                                <div class="project-overlay">
+                                    <h3>Battle City</h3>
+                                    <p class="project-desc">Retro tank battle game recreation. Built with HTML, CSS, and JavaScript.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Battle City</h3>
+                                <p class="project-desc-mobile">Retro tank battle game recreation.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sd-tower-of-hanoi.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project4.png" alt="Tower Of Hanoi">
+                                <div class="project-overlay">
+                                    <h3>Tower Of Hanoi</h3>
+                                    <p class="project-desc">Interactive puzzle solver with visual animations. Vanilla JavaScript implementation.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Tower Of Hanoi</h3>
+                                <p class="project-desc-mobile">Interactive puzzle solver with visual animations.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sd-open-numerology-app.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project5.png" alt="Open Numerology App">
+                                <div class="project-overlay">
+                                    <h3>Open Numerology App</h3>
+                                    <p class="project-desc">Calculate and explore numerology meanings. Clean JavaScript interface.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Open Numerology App</h3>
+                                <p class="project-desc-mobile">Calculate and explore numerology meanings.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sdword.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project6.png" alt="Rich Text Editor">
+                                <div class="project-overlay">
+                                    <h3>SD Word</h3>
+                                    <p class="project-desc">Feature-rich text editor with auto-save to localStorage. Built with vanilla JavaScript.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>SD Word</h3>
+                                <p class="project-desc-mobile">Feature-rich text editor with auto-save to localStorage.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="projectcard hidden-project" data-priority="low">
+                        <a href="https://sd-chess.netlify.app/" target="_blank" class="project-link">
+                            <div class="img-wrapper">
+                                <img src="/assets/project9.png" alt="Neon Chess">
+                                <div class="project-overlay">
+                                    <h3>Neon Chess</h3>
+                                    <p class="project-desc">Play vs AI or online with friends using PeerJS. Neon-styled with vanilla JavaScript.</p>
+                                    <div class="tech-badges">
+                                        <span class="badge badge-js">JavaScript</span>
+                                        <span class="badge badge-html">HTML</span>
+                                        <span class="badge badge-css">CSS</span>
+                                        <span class="badge badge-peer">PeerJS</span>
+                                    </div>
+                                    <span class="visit-btn">Visit Live</span>
+                                </div>
+                            </div>
+                            <div class="project-info-mobile">
+                                <h3>Neon Chess</h3>
+                                <p class="project-desc-mobile">Play vs AI or online with friends using PeerJS.</p>
+                                <div class="tech-badges-mobile">
+                                    <span class="badge-mobile">JS</span>
+                                    <span class="badge-mobile">HTML</span>
+                                    <span class="badge-mobile">CSS</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="load-more-container">
+                    <button class="load-more-btn" id="loadMoreBtn">
+                        Load More Projects <span class="remaining-count">(6)</span>
+                    </button>
+                </div>
             </section>
 
-            <section class="contactme section-block" id="contact">
+            <section class="contactme section-block fade-in-section" id="contact">
                 <h2>Contact Me</h2>
                 <p>If you would like to get in touch, please fill out the form</p>
-                <form class="contactform" action="https://formspree.io/f/meevvjnw" method="POST">
+                <form class="contactform" action="https://formspree.io/f/meevvjnw" method="POST" id="contactForm">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    <span class="error-message" id="nameError"></span>
                     
                     <label for="email">Your Email</label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    <span class="error-message" id="emailError"></span>
                     
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" placeholder="Type your message here..." cols="30" rows="6" required></textarea>
+                    <span class="error-message" id="messageError"></span>
                     
-                    <button type="submit">Send Message</button>
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">Send Message</span>
+                        <span class="btn-loader" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Sending...
+                        </span>
+                    </button>
+                    <div class="form-feedback" id="formFeedback"></div>
                 </form>
             </section>
         </main>
@@ -194,6 +527,8 @@
             <p>&copy; 2026 Sagar Dey. All rights reserved.</p>
         </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
 
